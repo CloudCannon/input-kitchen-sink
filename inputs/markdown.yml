@@ -4,7 +4,7 @@ convention:
   markdown: Hello
   my_markdown: Hello
 options:
-  short_resizable_markdown:
+  short_non_resizable_markdown:
   big_toolbar_markdown:
   no_toolbar_markdown:
   null_markdown:
@@ -13,9 +13,9 @@ options:
 _inputs:
   markdown_input:
     type: markdown
-  options.short_resizable_markdown:
+  options.short_non_resizable_markdown:
     options:
-      allow_resize: true
+      allow_resize: false
       initial_height: 135
   options.big_toolbar_markdown:
     options:

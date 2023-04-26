@@ -18,7 +18,8 @@ valid:
   binary_number: 0b11110001001000000
   hex_number: 0x1E240
   null_number:
-  empty_number: ''
+invalid:
+  not_a_number: ''
 options:
   between_1_and_10_whole_number: 5
   between_0_and_5_half_number: 3.5

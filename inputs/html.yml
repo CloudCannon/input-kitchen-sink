@@ -4,7 +4,7 @@ convention:
   html: Hi there
   my_html: Hi there
 options:
-  short_resizable_html:
+  short_non_resizable_html:
   big_toolbar_html:
   no_toolbar_html:
   null_html:
@@ -13,9 +13,9 @@ options:
 _inputs:
   html_input:
     type: html
-  options.short_resizable_html:
+  options.short_non_resizable_html:
     options:
-      allow_resize: true
+      allow_resize: false
       initial_height: 135
   options.big_toolbar_html:
     options:

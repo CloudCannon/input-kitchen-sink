@@ -1,7 +1,7 @@
 configuration:
-  range_input: 123
+  range_input: 5
 invalid:
-  no_option_range: 5
+  no_options_range: 5
 options:
   between_1_and_10_whole_range: 5
   between_0_and_5_half_range: 3.5
@@ -17,23 +17,27 @@ _inputs:
       step: 1
   invalid.no_options_range:
     type: range
-  options.between_1_and_10_range:
+  options.between_1_and_10_whole_range:
+    type: range
     options:
       min: 1
       max: 10
       step: 1
-  options.between_0_and_5_range:
+  options.between_0_and_5_half_range:
+    type: range
     options:
       min: 0
       max: 5
       step: 0.5
   options.null_range:
+    type: range
     options:
       empty_type: 'null'
       min: 1
       max: 10
       step: 1
   options.range_range:
+    type: range
     options:
       empty_type: range
       min: 1

@@ -1,0 +1,46 @@
+configuration:
+  number_input: 123
+convention:
+  number: 123
+  my_number: 123
+  anything: 123
+valid:
+  1_number: 123456
+  2_number: -123456
+  3_number: 123456e78
+  4_number: 123456e+78
+  5_number: 123456e-78
+  1_floating_number: 123.456
+  2_floating_number: -123.456
+  3_floating_number: 123.456e78
+  4_floating_number: 123.456e+78
+  5_floating_number: 123.456e-78
+  binary_number: 0b11110001001000000
+  hex_number: 0x1E240
+  null_number:
+  empty_number: ''
+options:
+  between_1_and_10_whole_number: 5
+  between_0_and_5_half_number: 3.5
+  null_number:
+  number_number:
+
+_inputs:
+  number_input:
+    type: number
+  options.between_1_and_10_number:
+    options:
+      min: 1
+      max: 10
+      step: 1
+  options.between_0_and_5_number:
+    options:
+      min: 0
+      max: 5
+      step: 0.5
+  options.null_number:
+    options:
+      empty_type: 'null'
+  options.number_number:
+    options:
+      empty_type: number

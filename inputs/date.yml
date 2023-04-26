@@ -1,0 +1,26 @@
+configuration:
+  date_input: 2020-07-15T12:00:00.000Z
+convention:
+  my_date: 2020-07-15T12:00:00.000Z
+valid:
+  null_date:
+  empty_date: ''
+  unquoted_date: 2020-07-15T12:00:00Z
+  quoted_date: '2020-07-15T12:00:00Z'
+options:
+  timezone_date: 2020-07-15T12:00:00.000Z
+  null_date:
+  string_date:
+
+_inputs:
+  date_input:
+    type: date
+  options.timezone_date:
+    options:
+      timezone: America/New_York
+  options.null_date:
+    options:
+      empty_type: 'null'
+  options.string_date:
+    options:
+      empty_type: string

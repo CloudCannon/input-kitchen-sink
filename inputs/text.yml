@@ -1,0 +1,23 @@
+configuration:
+  text_input: Hello
+convention:
+  text: Hello
+valid:
+  null_text:
+  empty_text: ''
+  text: any string
+options:
+  null_text:
+  string_text:
+
+_inputs:
+  text_input:
+    type: text
+  text:
+    comment: The convention here is this doesn't match any other input convention.
+  options.null_text:
+    options:
+      empty_type: 'null'
+  options.string_text:
+    options:
+      empty_type: string

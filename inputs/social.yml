@@ -1,0 +1,48 @@
+configuration:
+  facebook_input: CloudCannon
+convention:
+  facebook: CloudCannon
+  my_facebook: CloudCannon
+  facebook_username: CloudCannon
+  my_facebook_username: CloudCannon
+  facebook_url: https://www.facebook.com/CloudCannon
+  my_facebook_url: https://www.facebook.com/CloudCannon
+  twitter: CloudCannon
+  my_twitter: CloudCannon
+  twitter_username: CloudCannon
+  my_twitter_username: CloudCannon
+  twitter_url: https://twitter.com/@jekyllrb
+  my_twitter_url: https://twitter.com/@jekyllrb
+  instagram: purenewzealand
+  my_instagram: purenewzealand
+  instagram_username: purenewzealand
+  my_instagram_username: purenewzealand
+  instagram_url: https://www.instagram.com/purenewzealand/
+  my_instagram_url: https://www.instagram.com/purenewzealand/
+  github: CloudCannon
+  my_github: CloudCannon
+  github_username: CloudCannon
+  my_github_username: CloudCannon
+  github_url: https://github.com/jekyll
+  my_github_url: https://github.com/jekyll
+  pinterest: pinterest
+  my_pinterest: pinterest
+  pinterest_username: pinterest
+  my_pinterest_username: pinterest
+  pinterest_url: https://www.pinterest.com/pinterest/
+  my_pinterest_url: https://www.pinterest.com/pinterest/
+options:
+  null_facebook:
+  string_facebook:
+
+_inputs:
+  facebook_input:
+    type: facebook
+  options.null_facebook:
+    type: facebook
+    options:
+      empty_type: 'null'
+  options.string_facebook:
+    type: facebook
+    options:
+      empty_type: string

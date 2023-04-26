@@ -1,0 +1,24 @@
+configuration:
+  email_input: contact@example.com
+convention:
+  email: contact@example.com
+  my_email: contact@example.com
+  email_address: contact@example.com
+  my_email_address: contact@example.com
+valid:
+  null_email:
+  empty_email: ''
+  email: any string
+options:
+  null_email:
+  string_email:
+
+_inputs:
+  email_input:
+    type: email
+  options.null_email:
+    options:
+      empty_type: 'null'
+  options.string_email:
+    options:
+      empty_type: string

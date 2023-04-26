@@ -1,0 +1,42 @@
+configuration:
+  textarea_input: Hi there
+convention:
+  textarea: Hi there
+  my_textarea: Hi there
+  description: Hi there
+  my_description: Hi there
+valid:
+  null_textarea:
+  empty_textarea: ''
+  textarea: any string
+  multiline1_textarea: >
+    multiline
+    string
+  multiline2_textarea: >-
+    multiline
+    string
+  multiline3_textarea: >+
+    multiline
+    string
+  multiline4_textarea: |
+    multiline
+    string
+  multiline5_textarea: |-
+    multiline
+    string
+  multiline6_textarea: |+
+    multiline
+    string
+options:
+  null_textarea:
+  string_textarea:
+
+_inputs:
+  textarea_input:
+    type: textarea
+  options.null_textarea:
+    options:
+      empty_type: 'null'
+  options.string_textarea:
+    options:
+      empty_type: string

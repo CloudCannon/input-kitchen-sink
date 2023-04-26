@@ -1,0 +1,23 @@
+configuration:
+  time_input: 1:23 pm
+convention:
+  time: 1:23 pm
+  my_time: 1:23 pm
+valid:
+  null_time:
+  empty_time: ''
+  12hr_time: 1:23 pm
+  24hr_time: 13:23:00
+options:
+  null_time:
+  string_time:
+
+_inputs:
+  time_input:
+    type: time
+  options.null_time:
+    options:
+      empty_type: 'null'
+  options.string_time:
+    options:
+      empty_type: string

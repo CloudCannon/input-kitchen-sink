@@ -1,0 +1,65 @@
+configuration:
+  multichoice_input:
+    - Blue
+convention:
+  colors:
+    - Blue
+  my_colors:
+    - Blue
+  ssgs:
+    - 11ty
+  my_ssgs:
+    - 11ty
+valid:
+  null_colors:
+  array_colors: []
+invalid:
+  multichoice_input: Oh no!
+  no_values:
+options:
+  value_key_animals:
+    - Rabbit
+  preview_animals:
+    - Rabbit
+
+_inputs:
+  multichoice_input:
+    type: multichoice
+    options:
+      values:
+        - Pink
+        - Blue
+        - Orange
+  invalid.no_values:
+    type: multichoice
+  options.value_key_animal:
+    options:
+      value_key: known_as
+  options.preview_animal:
+    options:
+      preview:
+        icon:
+          - key: icon_material
+          - pets
+        text:
+          - key: known_as
+          - Unknown
+
+_select_data:
+  colors:
+    - Red
+    - Blue
+    - Green
+  ssgs:
+    jekyll: Jekyll
+    hugo: Hugo
+    11ty: Eleventy
+  animals:
+    - known_as: Dog
+      blurb: Best friend
+    - known_as: Rabbit
+      blurb: Eats a lot
+      icon_material: cruelty_free
+    - known_as: Bug
+      blurb: Could be one of these 🪱🐛🐞🪲🪳
+      icon_material: bug_report

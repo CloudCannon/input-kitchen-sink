@@ -1,0 +1,68 @@
+configuration:
+  code_block_input: echo hello
+convention:
+  code_block: echo hello
+  my_code_block: echo hello
+  ruby_code_block: |
+    def say_hello
+      puts 'Hi there!'
+    end
+
+    say_hello
+valid:
+  null_code_block:
+  empty_code_block: ''
+  code_block: any string
+  multiline1_code_block: >
+    multiline
+    string
+  multiline2_code_block: >-
+    multiline
+    string
+  multiline3_code_block: >+
+    multiline
+    string
+  multiline4_code_block: |
+    multiline
+    string
+  multiline5_code_block: |-
+    multiline
+    string
+  multiline6_code_block: |+
+    multiline
+    string
+options:
+  single_line_code_block: echo hello
+  gutterless_code_block: echo hello
+  themed_code_block: echo hello
+  ruby_custom_code_block: |
+    def say_hello
+      puts 'Hi there!'
+    end
+
+    say_hello
+  null_code_block:
+  string_code_block:
+
+_inputs:
+  code_block_input:
+    type: code
+  options.gutterless_code_block:
+    options:
+      show_gutter: false
+  options.single_line_code_block:
+    options:
+      min_visible_lines: 1
+      max_visible_lines: 1
+  options.themed_code_block:
+    options:
+      theme: tomorrow_night
+  options.ruby_custom_code_block:
+    options:
+      syntax: ruby
+  options.null_code_block:
+    options:
+      empty_type: 'null'
+  options.string_code_block:
+    options:
+      empty_type: string

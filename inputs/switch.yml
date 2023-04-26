@@ -1,0 +1,9 @@
+configuration:
+  switch_input:
+convention:
+  should_be_true: true
+  should_be_false: false
+
+_inputs:
+  switch_input:
+    type: switch

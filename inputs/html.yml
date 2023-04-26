@@ -1,0 +1,57 @@
+configuration:
+  html_input: Hi there
+convention:
+  html: Hi there
+  my_html: Hi there
+options:
+  short_resizable_html:
+  big_toolbar_html:
+  no_toolbar_html:
+  null_html:
+  string_html:
+
+_inputs:
+  html_input:
+    type: html
+  options.short_resizable_html:
+    options:
+      allow_resize: true
+      initial_height: 135
+  options.big_toolbar_html:
+    options:
+      blockquote: true
+      bold: true
+      format: p h1 h2 h3 h4 h5 h6 pre address div
+      italic: true
+      strike: true
+      subscript: true
+      superscript: true
+      underline: true
+      bulletedlist: true
+      indent: true
+      numberedlist: true
+      outdent: true
+      code: true
+      embed: true
+      horizontalrule: true
+      image: true
+      table: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      styles: //css/styles.css
+      left: align-left
+      center: align-center
+      right: align-right
+      justify: align-justify
+      image_size_attributes: true
+  options.no_toolbar_html:
+    options:
+      bold: false
+  options.null_html:
+    options:
+      empty_type: 'null'
+  options.string_html:
+    options:
+      empty_type: string

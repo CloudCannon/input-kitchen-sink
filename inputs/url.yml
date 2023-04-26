@@ -1,0 +1,27 @@
+configuration:
+  url_input: 'https://cloudcannon.com/'
+convention:
+  url: 'https://cloudcannon.com/'
+  my_url: 'https://cloudcannon.com/'
+  link: 'https://cloudcannon.com/'
+  my_link: 'https://cloudcannon.com/'
+valid:
+  null_url:
+  empty_url: ''
+  unquoted_url: cloudcannon.com
+examples:
+  no_protocol_url: cloudcannon.com
+  local_url: /about-us/
+options:
+  null_url:
+  string_url:
+
+_inputs:
+  url_input:
+    type: url
+  options.null_url:
+    options:
+      empty_type: 'null'
+  options.string_url:
+    options:
+      empty_type: string

@@ -1,0 +1,22 @@
+configuration:
+  document_input: /documents/example.pdf
+convention:
+  document: /documents/example.pdf
+  my_document: /documents/example.pdf
+  my_document_path: /documents/example.pdf
+examples:
+  external_document: 'https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf'
+  file_local_document: /documents/example.pdf
+options:
+  null_document:
+  string_document:
+
+_inputs:
+  document_input:
+    type: document
+  options.null_document:
+    options:
+      empty_type: 'null'
+  options.string_document:
+    options:
+      empty_type: string

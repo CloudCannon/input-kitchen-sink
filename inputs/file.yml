@@ -1,0 +1,23 @@
+configuration:
+  path_input: /css/styles.css
+convention:
+  path: /css/styles.css
+  my_path: /css/styles.css
+examples:
+  external_path: 'https://placekitten.com/100/100?a=.png'
+  image_no_extension_external_path: 'https://placekitten.com/100/100'
+  file_local_path: /css/styles.css
+  image_local_path: /images/example.png
+options:
+  null_path:
+  string_path:
+
+_inputs:
+  path_input:
+    type: path
+  options.null_path:
+    options:
+      empty_type: 'null'
+  options.string_path:
+    options:
+      empty_type: string

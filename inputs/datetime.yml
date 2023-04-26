@@ -1,0 +1,30 @@
+configuration:
+  datetime_input: 2020-07-15T12:00:00.000Z
+convention:
+  date: 2020-07-15T12:00:00.000Z
+  datetime: 2020-07-15T12:00:00.000Z
+  my_datetime: 2020-07-15T12:00:00.000Z
+  at: 2020-07-15T12:00:00.000Z
+  my_at: 2020-07-15T12:00:00.000Z
+valid:
+  null_datetime:
+  empty_datetime: ''
+  unquoted_datetime: 2020-07-15T12:00:00Z
+  quoted_datetime: '2020-07-15T12:00:00Z'
+options:
+  timezone_datetime: 2020-07-15T12:00:00.000Z
+  null_datetime:
+  string_datetime:
+
+_inputs:
+  datetime_input:
+    type: datetime
+  options.timezone_datetime:
+    options:
+      timezone: America/New_York
+  options.null_datetime:
+    options:
+      empty_type: 'null'
+  options.string_datetime:
+    options:
+      empty_type: string

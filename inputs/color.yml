@@ -1,0 +1,83 @@
+configuration:
+  color_input: '#abcdef'
+  rgb_input: rgb(3, 74, 216)
+  rgba_input: rgba(3, 74, 216, 0.5)
+  hex_input: '#abcdef'
+  hexa_input: '#abcdefff'
+  hsv_input: hsv(220, 98.6, 84.7)
+  hsva_input: hsva(220, 98.6, 84.7, 0.5)
+  hsl_input: hsl(220, 97.3, 42.9)
+  hsla_input: hsla(220, 97.3, 42.9, 0.5)
+convention:
+  color: '#abcdef'
+  my_color: '#abcdef'
+  colour: '#abcdef'
+  my_colour: '#abcdef'
+  rgb: rgb(3, 74, 216)
+  my_rgb: rgb(3, 74, 216)
+  rgba: rgba(3, 74, 216, 0.5)
+  my_rgba: rgba(3, 74, 216, 0.5)
+  hex: '#abcdef'
+  my_hex: '#abcdef'
+  hsv: hsv(220, 98.6, 84.7)
+  my_hsv: hsv(220, 98.6, 84.7)
+  hsva: hsva(220, 98.6, 84.7, 0.5)
+  my_hsva: hsva(220, 98.6, 84.7, 0.5)
+  hsl: hsl(220, 97.3, 42.9)
+  my_hsl: hsl(220, 97.3, 42.9)
+  hsla: hsla(220, 97.3, 42.9, 0.5)
+  my_hsla: hsla(220, 97.3, 42.9, 0.5)
+valid:
+  null_color:
+  empty_color: ''
+  unquoted_color: rgb(50, 50, 50)
+  quoted_color: '#abcdef'
+options:
+  null_color:
+  string_color:
+
+_inputs:
+  color_input:
+    type: color
+  rgb_input:
+    type: color
+    options:
+      format: rgb
+  rgba_input:
+    type: color
+    options:
+      format: rgb
+      alpha: true
+  hex_input:
+    type: color
+    options:
+      format: hex
+  hexa_input:
+    type: color
+    options:
+      format: hex
+      alpha: true
+  hsv_input:
+    type: color
+    options:
+      format: hsv
+  hsva_input:
+    type: color
+    options:
+      format: hsv
+      alpha: true
+  hsl_input:
+    type: color
+    options:
+      format: hsl
+  hsla_input:
+    type: color
+    options:
+      format: hsl
+      alpha: true
+  options.null_color:
+    options:
+      empty_type: 'null'
+  options.string_color:
+    options:
+      empty_type: string

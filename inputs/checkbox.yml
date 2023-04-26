@@ -1,0 +1,9 @@
+configuration:
+  checkbox_input:
+convention:
+  should_be_true: true
+  should_be_false: false
+
+_inputs:
+  checkbox_input:
+    type: checkbox

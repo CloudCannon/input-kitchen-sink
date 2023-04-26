@@ -2,8 +2,8 @@
 	"ssg": "other",
 	"build_configuration": {
 		"install_command": "",
-		"build_command": "",
-		"output_path": "",
+		"build_command": "mkdir public && echo hello > public/index.html",
+		"output_path": "public",
 		"preserved_paths": "",
 		"preserveOutput": false,
 		"includeGit": false,

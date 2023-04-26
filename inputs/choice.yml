@@ -1,6 +1,5 @@
 configuration:
   choice_input: Blue
-convention:
   color: Blue
   my_color: Blue
   ssg: 11ty
@@ -10,6 +9,14 @@ options:
   preview_animal: Rabbit
 
 _inputs:
+  color:
+    type: choice
+  my_color:
+    type: choice
+  ssg:
+    type: choice
+  my_ssg:
+    type: choice
   choice_input:
     type: choice
     options:

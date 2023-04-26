@@ -15,12 +15,15 @@ valid:
   code_block: any string
   multiline1_code_block: >
     multiline
+
     string
   multiline2_code_block: >-
     multiline
+
     string
   multiline3_code_block: >+
     multiline
+
     string
   multiline4_code_block: |
     multiline
@@ -56,7 +59,7 @@ _inputs:
       max_visible_lines: 1
   options.themed_code_block:
     options:
-      theme: tomorrow_night
+      theme: dawn
   options.ruby_custom_code_block:
     options:
       syntax: ruby

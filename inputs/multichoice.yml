@@ -1,7 +1,6 @@
 configuration:
   multichoice_input:
     - Blue
-convention:
   colors:
     - Blue
   my_colors:
@@ -14,7 +13,7 @@ valid:
   null_colors:
   array_colors: []
 invalid:
-  multichoice_input: Oh no!
+  incorrect_value: Oh no!
   no_values:
 options:
   value_key_animals:
@@ -23,6 +22,14 @@ options:
     - Rabbit
 
 _inputs:
+  colors:
+    type: multichoice
+  my_colors:
+    type: multichoice
+  ssgs:
+    type: multichoice
+  my_ssgs:
+    type: multichoice
   multichoice_input:
     type: multichoice
     options:
@@ -30,6 +37,12 @@ _inputs:
         - Pink
         - Blue
         - Orange
+  valid.null_colors:
+    type: multichoice
+  valid.array_colors:
+    type: multichoice
+  invalid.incorrect_value:
+    type: multichoice
   invalid.no_values:
     type: multichoice
   options.value_key_animal:

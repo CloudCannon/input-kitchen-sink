@@ -1,7 +1,6 @@
 # Input Kitchen Sink
 
-Examples of CloudCannon inputs, configured with:
+Various examples of CloudCannon inputs, with various configuration settings, conventions, and
+options applied.
 
-- Input configuration
-- Name/value conventions
-- Various options
+[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/input-kitchen-sink)

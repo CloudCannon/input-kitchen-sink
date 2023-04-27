@@ -5,5 +5,5 @@ collections_config:
     documentation:
       url: 'https://cloudcannon.com/documentation/articles/how-to-choose-what-input-is-used-in-the-data-editor/'
       text: Inputs documentation
-    path: inputs
+    path: sinks
     icon: countertops

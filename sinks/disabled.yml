@@ -1,9 +1,5 @@
 configuration:
   disabled_input: Untouchable
-valid:
-  null_disabled:
-  empty_disabled: ''
-  disabled: any string
 options:
   null_disabled:
   string_disabled:
@@ -12,8 +8,10 @@ _inputs:
   disabled_input:
     type: disabled
   options.null_disabled:
+    type: disabled
     options:
       empty_type: 'null'
   options.string_disabled:
+    type: disabled
     options:
       empty_type: string

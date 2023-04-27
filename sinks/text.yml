@@ -13,7 +13,7 @@ options:
 _inputs:
   text_input:
     type: text
-  text:
+  convention.text:
     comment: The convention here is this doesn't match any other input convention.
   options.null_text:
     options:

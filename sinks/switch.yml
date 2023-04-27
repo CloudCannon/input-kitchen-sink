@@ -1,0 +1,16 @@
+configuration:
+  null_input:
+  true_input:
+  false_input:
+invalid:
+  not_a_boolean: Hi there
+
+_inputs:
+  null_input:
+    type: switch
+  true_input:
+    type: switch
+  false_input:
+    type: switch
+  invalid.not_a_boolean:
+    type: switch

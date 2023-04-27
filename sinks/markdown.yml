@@ -1,12 +1,12 @@
 configuration:
-  markdown_input: Hello
+  markdown_input: 'Good **stuff**.'
 convention:
-  markdown: Hello
-  my_markdown: Hello
+  markdown: 'Good **stuff**.'
+  my_markdown: 'Good **stuff**.'
 options:
-  short_non_resizable_markdown:
-  big_toolbar_markdown:
-  no_toolbar_markdown:
+  short_non_resizable_markdown: 'Good **stuff**.'
+  big_toolbar_markdown: 'Good **stuff**.'
+  no_toolbar_markdown: 'Good **stuff**.'
   null_markdown:
   string_markdown:
 

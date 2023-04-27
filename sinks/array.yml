@@ -1,0 +1,250 @@
+configuration:
+  empty_structured_array:
+  structured_array:
+    - image:
+      caption:
+  empty_subtype_array:
+  checkbox_array:
+    - true
+  choice_array:
+    - jekyll
+  code_array:
+    - echo hello
+  color_array:
+    - '#abcdef'
+  date_array:
+    - 2020-07-15T12:00:00.000Z
+  datetime_array:
+    - 2020-07-15T12:00:00.000Z
+  disabled_array:
+    - Cannot edit this
+  document_array:
+    - /documents/example.pdf
+  email_array:
+    - example@example.com
+  file_array:
+    - /css/styles.css
+  html_array:
+    - 'Good <strong>stuff</strong>.'
+  image_array:
+    - /images/example.png
+  markdown_array:
+    - 'Good **stuff**.'
+  multichoice_array:
+    - - jekyll
+      - 11ty
+  multiselect_array:
+    - - jekyll
+      - 11ty
+  number_array:
+    - 5
+  range_array:
+    - 5
+  select_array:
+    - jekyll
+  social_array:
+    - CloudCannon
+  switch_array:
+    - true
+  text_array:
+    - Hello
+  textarea_array:
+    - Hello
+  time_array:
+    - '1:23 pm'
+  url_array:
+    - 'https://cloudcannon.com'
+convention:
+  object_array:
+    - title: Hello
+      description: This is a description
+      image: /images/example.png
+      icon: cloud
+invalid:
+  no_value_empty_array:
+  non_object_value: Hello
+options:
+  preview_array:
+    - title: Default
+      description: Default
+      image: /images/default.png
+      icon: bug_report
+      header: Hello
+      blurb: This is a description
+      picture: /images/example.png
+      logo: cloud
+  null_array:
+  array_array:
+
+_inputs:
+  structured_array:
+    type: array
+    options:
+      structures: _structures.gallery
+  empty_structured_array:
+    type: array
+    options:
+      structures: _structures.gallery
+  empty_subtype_array:
+    type: array
+  empty_subtype_array[*]:
+    type: color
+  checkbox_array:
+    type: array
+  checkbox_array[*]:
+    type: checkbox
+  choice_array:
+    type: array
+  choice_array[*]:
+    type: choice
+    options:
+      values: _select_data.ssgs
+  code_array:
+    type: array
+  code_array[*]:
+    type: code
+  color_array:
+    type: array
+  color_array[*]:
+    type: color
+  date_array:
+    type: array
+  date_array[*]:
+    type: date
+  datetime_array:
+    type: array
+  datetime_array[*]:
+    type: datetime
+  disabled_array:
+    type: array
+  disabled_array[*]:
+    type: disabled
+  document_array:
+    type: array
+  document_array[*]:
+    type: document
+  email_array:
+    type: array
+  email_array[*]:
+    type: email
+  file_array:
+    type: array
+  file_array[*]:
+    type: file
+  html_array:
+    type: array
+  html_array[*]:
+    type: html
+  image_array:
+    type: array
+  image_array[*]:
+    type: image
+  markdown_array:
+    type: array
+  markdown_array[*]:
+    type: markdown
+  multichoice_array:
+    type: array
+  multichoice_array[*]:
+    type: multichoice
+    options:
+      values: _select_data.ssgs
+  multiselect_array:
+    type: array
+  multiselect_array[*]:
+    type: multiselect
+    options:
+      values: _select_data.ssgs
+  number_array:
+    type: array
+  number_array[*]:
+    type: number
+  range_array:
+    type: array
+  range_array[*]:
+    type: range
+    options:
+      min: 1
+      max: 10
+      step: 1
+  select_array:
+    type: array
+  select_array[*]:
+    type: select
+    options:
+      values: _select_data.ssgs
+  social_array:
+    type: array
+  social_array[*]:
+    type: github
+  switch_array:
+    type: array
+  switch_array[*]:
+    type: switch
+  text_array:
+    type: array
+  text_array[*]:
+    type: text
+  textarea_array:
+    type: array
+  textarea_array[*]:
+    type: textarea
+  time_array:
+    type: array
+  time_array[*]:
+    type: time
+  url_array:
+    type: array
+  url_array[*]:
+    type: url
+  invalid.no_value_empty_array:
+    type: array
+  invalid.non_object_value:
+    type: array
+  options.preview_array:
+    type: array
+    options:
+      preview:
+        text:
+          - key: header
+        subtext:
+          - key: blurb
+        icon:
+          - key: picture
+        image:
+          - key: logo
+  options.null_array:
+    type: array
+    options:
+      structures: _structures.gallery
+      empty_type: 'null'
+  options.array_array:
+    type: array
+    options:
+      structures: _structures.gallery
+      empty_type: array
+
+_structures:
+  gallery:
+    values:
+      - label: Image
+        icon: image
+        tags:
+          - Media
+          - Asset
+        value:
+          image: /images/example.png
+          caption:
+      - label: External link
+        icon: link
+        tags:
+          - Media
+        value:
+          url:
+          title:
+
+_select_data:
+  ssgs:
+    jekyll: Jekyll
+    hugo: Hugo
+    11ty: Eleventy

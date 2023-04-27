@@ -1,12 +1,12 @@
 configuration:
-  html_input: Hi there
+  html_input: 'Good <strong>stuff</strong>.'
 convention:
-  html: Hi there
-  my_html: Hi there
+  html: 'Good <strong>stuff</strong>.'
+  my_html: 'Good <strong>stuff</strong>.'
 options:
-  short_non_resizable_html:
-  big_toolbar_html:
-  no_toolbar_html:
+  short_non_resizable_html: 'Good <strong>stuff</strong>.'
+  big_toolbar_html: 'Good <strong>stuff</strong>.'
+  no_toolbar_html: 'Good <strong>stuff</strong>.'
   null_html:
   string_html:
 

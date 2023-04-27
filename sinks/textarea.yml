@@ -11,12 +11,15 @@ valid:
   textarea: any string
   multiline1_textarea: >
     multiline
+
     string
   multiline2_textarea: >-
     multiline
+
     string
   multiline3_textarea: >+
     multiline
+
     string
   multiline4_textarea: |
     multiline

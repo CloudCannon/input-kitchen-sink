@@ -1,5 +1,5 @@
 collections_config:
-  inputs:
+  sinks:
     name: The Kitchen Sink
     description: All inputs configured in various states.
     documentation:

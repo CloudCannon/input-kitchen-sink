@@ -1,0 +1,267 @@
+configuration:
+  structured_object:
+    image:
+    caption:
+  empty_structured_object:
+  value_structured_object:
+    one:
+      image:
+      caption:
+  empty_value_structured_object:
+  empty_subtype_object:
+  checkbox_object:
+    one: true
+  choice_object:
+    one: jekyll
+  code_object:
+    one: echo hello
+  color_object:
+    one: '#abcdef'
+  date_object:
+    one: 2020-07-15T12:00:00.000Z
+  datetime_object:
+    one: 2020-07-15T12:00:00.000Z
+  disabled_object:
+    one: Cannot edit this
+  document_object:
+    one: /documents/example.pdf
+  email_object:
+    one: example@example.com
+  file_object:
+    one: /css/styles.css
+  html_object:
+    one: 'Good <strong>stuff</strong>.'
+  image_object:
+    one: /images/example.png
+  markdown_object:
+    one: 'Good **stuff**.'
+  multichoice_object:
+    one:
+      - jekyll
+      - 11ty
+  multiselect_object:
+    one:
+      - jekyll
+      - 11ty
+  number_object:
+    one: 5
+  range_object:
+    one: 5
+  select_object:
+    one: jekyll
+  social_object:
+    one: CloudCannon
+  switch_object:
+    one: true
+  text_object:
+    one: Hello
+  textarea_object:
+    one: Hello
+  time_object:
+    one: '1:23 pm'
+  url_object:
+    one: 'https://cloudcannon.com'
+convention:
+  object:
+    title: Hello
+    description: This is a description
+    image: /images/example.png
+    icon: cloud
+invalid:
+  no_value_empty_object:
+  non_object_value: Hello
+options:
+  preview_object:
+    title: Default
+    description: Default
+    image: /images/default.png
+    icon: bug_report
+    header: Hello
+    blurb: This is a description
+    picture: /images/example.png
+    logo: cloud
+  null_object:
+  object_object:
+
+_inputs:
+  empty_subtype_object:
+    type: array
+  empty_subtype_object.*:
+    type: color
+  checkbox_object:
+    type: array
+  checkbox_object.*:
+    type: checkbox
+  choice_object:
+    type: array
+  choice_object.*:
+    type: choice
+    options:
+      values: _select_data.ssgs
+  code_object:
+    type: array
+  code_object.*:
+    type: code
+  color_object:
+    type: array
+  color_object.*:
+    type: color
+  date_object:
+    type: array
+  date_object.*:
+    type: date
+  datetime_object:
+    type: array
+  datetime_object.*:
+    type: datetime
+  disabled_object:
+    type: array
+  disabled_object.*:
+    type: disabled
+  document_object:
+    type: array
+  document_object.*:
+    type: document
+  email_object:
+    type: array
+  email_object.*:
+    type: email
+  file_object:
+    type: array
+  file_object.*:
+    type: file
+  html_object:
+    type: array
+  html_object.*:
+    type: html
+  image_object:
+    type: array
+  image_object.*:
+    type: image
+  markdown_object:
+    type: array
+  markdown_object.*:
+    type: markdown
+  multichoice_object:
+    type: array
+  multichoice_object.*:
+    type: multichoice
+    options:
+      values: _select_data.ssgs
+  multiselect_object:
+    type: array
+  multiselect_object.*:
+    type: multiselect
+    options:
+      values: _select_data.ssgs
+  number_object:
+    type: array
+  number_object.*:
+    type: number
+  range_object:
+    type: array
+  range_object.*:
+    type: range
+    options:
+      min: 1
+      max: 10
+      step: 1
+  select_object:
+    type: array
+  select_object.*:
+    type: select
+    options:
+      values: _select_data.ssgs
+  social_object:
+    type: array
+  social_object.*:
+    type: github
+  switch_object:
+    type: array
+  switch_object.*:
+    type: switch
+  text_object:
+    type: array
+  text_object.*:
+    type: text
+  textarea_object:
+    type: array
+  textarea_object.*:
+    type: textarea
+  time_object:
+    type: array
+  time_object.*:
+    type: time
+  url_object:
+    type: array
+  url_object.*:
+    type: url
+  invalid.no_value_empty_object:
+    type: object
+  invalid.non_object_value:
+    type: object
+  structured_object:
+    type: object
+    options:
+      structures: _structures.gallery
+  empty_structured_object:
+    type: object
+    options:
+      structures: _structures.gallery
+  empty_value_structured_object:
+    type: object
+    options:
+      allow_create: true
+      value_structures: _structures.gallery
+  value_structured_object:
+    type: object
+    options:
+      allow_create: true
+      value_structures: _structures.gallery
+  options.preview_object:
+    type: object
+    options:
+      preview:
+        text:
+          - key: header
+        subtext:
+          - key: blurb
+        icon:
+          - key: picture
+        image:
+          - key: logo
+  options.null_object:
+    type: object
+    options:
+      structures: _structures.gallery
+      empty_type: 'null'
+  options.object_object:
+    type: object
+    options:
+      structures: _structures.gallery
+      empty_type: object
+
+_structures:
+  gallery:
+    values:
+      - label: Image
+        icon: image
+        tags:
+          - Media
+          - Asset
+        value:
+          image: /images/example.png
+          caption:
+      - label: External link
+        icon: link
+        tags:
+          - Media
+        value:
+          url:
+          title:
+
+_select_data:
+  ssgs:
+    jekyll: Jekyll
+    hugo: Hugo
+    11ty: Eleventy

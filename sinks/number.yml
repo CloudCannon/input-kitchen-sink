@@ -3,18 +3,18 @@ configuration:
 convention:
   number: 123
   my_number: 123
-  anything: 123
+  anything: 123.5
 valid:
-  1_number: 123456
-  2_number: -123456
-  3_number: 123456e78
-  4_number: 123456e+78
-  5_number: 123456e-78
-  1_floating_number: 123.456
-  2_floating_number: -123.456
-  3_floating_number: 123.456e78
-  4_floating_number: 123.456e+78
-  5_floating_number: 123.456e-78
+  positive_number: 123456
+  negative_number: -123456
+  e_number: 123456e78
+  e_positive_number: 123456e+78
+  e_negative_number: 123456e-78
+  positive_floating_number: 123.456
+  negative_floating_number: -123.456
+  e_floating_number: 123.456e78
+  e_positive_floating_number: 123.456e+78
+  e_negative_floating_number: 123.456e-78
   binary_number: 0b11110001001000000
   hex_number: 0x1E240
   null_number:

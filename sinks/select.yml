@@ -1,0 +1,57 @@
+configuration:
+  select_input: Blue
+  value_key_animal: Bunny
+  preview_animal: Rabbit
+convention:
+  color: Blue
+  my_color: Blue
+  ssg: 11ty
+  my_ssg: 11ty
+invalid:
+  no_value_key_or_preview_odd_animal: Dog
+
+_inputs:
+  select_input:
+    type: select
+    options:
+      values:
+        - Pink
+        - Blue
+        - Orange
+  value_key_animal:
+    type: select
+    options:
+      values: _select_data.animals
+      value_key: known_as
+  preview_animal:
+    type: select
+    options:
+      values: _select_data.animals
+      preview:
+        text:
+          - key: known_as
+          - Unknown
+  invalid.no_value_key_or_preview_odd_animal:
+    type: select
+    options:
+      values:
+        - ref: Dog
+        - ref: Rabbit
+        - ref: Bug
+
+_select_data:
+  colors:
+    - Red
+    - Blue
+    - Green
+  ssgs:
+    jekyll: Jekyll
+    hugo: Hugo
+    11ty: Eleventy
+  animals:
+    - name: Dog
+      known_as: Doggo
+    - name: Rabbit
+      known_as: Bunny
+    - name: Bug 🐛
+      known_as: Wormlike 🪱

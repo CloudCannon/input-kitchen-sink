@@ -1,5 +1,5 @@
 configuration:
-  path_input: /css/styles.css
+  file_input: /css/styles.css
 convention:
   path: /css/styles.css
   my_path: /css/styles.css
@@ -14,7 +14,7 @@ options:
 
 _inputs:
   path_input:
-    type: path
+    type: file
   options.null_path:
     options:
       empty_type: 'null'

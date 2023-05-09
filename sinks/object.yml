@@ -8,6 +8,7 @@ configuration:
       image:
       caption:
   empty_value_structured_object:
+  empty_value_structured_with_allowed_keys_object:
   empty_subtype_object:
   checkbox_object:
     one: true
@@ -68,6 +69,7 @@ convention:
     image: /images/example.png
     icon: cloud
 invalid:
+  empty: {}
   no_value_empty_object:
   non_object_value: Hello
 options:
@@ -85,81 +87,121 @@ options:
 
 _inputs:
   empty_subtype_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   empty_subtype_object.*:
     type: color
   checkbox_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   checkbox_object.*:
     type: checkbox
   choice_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   choice_object.*:
     type: choice
     options:
       values: _select_data.ssgs
+      preview:
+        icon: false
   code_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   code_object.*:
     type: code
   color_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   color_object.*:
     type: color
   date_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   date_object.*:
     type: date
   datetime_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   datetime_object.*:
     type: datetime
   disabled_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   disabled_object.*:
     type: disabled
   document_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   document_object.*:
     type: document
   email_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   email_object.*:
     type: email
   file_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   file_object.*:
     type: file
   html_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   html_object.*:
     type: html
   image_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   image_object.*:
     type: image
   markdown_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   markdown_object.*:
     type: markdown
   multichoice_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   multichoice_object.*:
     type: multichoice
     options:
       values: _select_data.ssgs
+      preview:
+        icon: false
   multiselect_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   multiselect_object.*:
     type: multiselect
     options:
       values: _select_data.ssgs
   number_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   number_object.*:
     type: number
   range_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   range_object.*:
     type: range
     options:
@@ -167,33 +209,47 @@ _inputs:
       max: 10
       step: 1
   select_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   select_object.*:
     type: select
     options:
       values: _select_data.ssgs
   social_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   social_object.*:
     type: github
   switch_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   switch_object.*:
     type: switch
   text_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   text_object.*:
     type: text
   textarea_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   textarea_object.*:
     type: textarea
   time_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   time_object.*:
     type: time
   url_object:
-    type: array
+    type: object
+    options:
+      allow_create: true
   url_object.*:
     type: url
   invalid.no_value_empty_object:
@@ -213,6 +269,15 @@ _inputs:
     options:
       allow_create: true
       value_structures: _structures.gallery
+  empty_value_structured_with_allowed_keys_object:
+    type: object
+    options:
+      allow_create: true
+      value_structures: _structures.gallery
+      allowed_keys:
+        - first
+        - second
+        - third
   value_structured_object:
     type: object
     options:

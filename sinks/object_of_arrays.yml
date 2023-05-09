@@ -1,0 +1,71 @@
+object_of_text_arrays:
+  one:
+    - hello
+    - there
+  two:
+    - hi
+    - again
+object_of_object_arrays:
+  one:
+    - title: hello
+      description: hello
+    - title: there
+      description: there
+  two:
+    - title: hi
+      description: hi
+    - title: again
+      description: again
+object_of_single_key_object_arrays:
+  one:
+    - title: hello
+    - title: there
+  two:
+    - title: hi
+    - title: again
+ignore: This is here to force non-tab object
+tabs:
+  things:
+    object_of_text_arrays:
+      one:
+        - hello
+        - there
+      two:
+        - hi
+        - again
+    object_of_object_arrays:
+      one:
+        - title: hello
+          description: hello
+        - title: there
+          description: there
+      two:
+        - title: hi
+          description: hi
+        - title: again
+          description: again
+    object_of_single_key_object_arrays:
+      one:
+        - title: hello
+        - title: there
+      two:
+        - title: hi
+        - title: again
+  ignore:
+    ignore: This is here to force tabbed object
+
+_inputs:
+  ignore:
+    type: disabled
+  object_of_text_arrays:
+    type: object
+    options:
+      allow_create: true
+  object_of_object_arrays:
+    type: object
+    options:
+      allow_create: true
+  object_of_single_key_object_arrays:
+    type: object
+    options:
+      allow_create: true

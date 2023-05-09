@@ -1,6 +1,7 @@
 collections_config:
   sinks:
     name: The Kitchen Sink
+    singular_name: Sink
     description: All inputs configured in various states.
     documentation:
       url: 'https://cloudcannon.com/documentation/articles/how-to-choose-what-input-is-used-in-the-data-editor/'

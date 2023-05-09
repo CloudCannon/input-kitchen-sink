@@ -1,0 +1,46 @@
+array_of_text_arrays:
+  - - hello
+    - there
+  - - hi
+    - again
+array_of_object_arrays:
+  - - title: hello
+      description: hello
+    - title: there
+      description: there
+  - - title: hi
+      description: hi
+    - title: again
+      description: again
+array_of_single_key_object_arrays:
+  - - title: hello
+    - title: there
+  - - title: hi
+    - title: again
+tabs:
+  things:
+    array_of_text_arrays:
+      - - hello
+        - there
+      - - hi
+        - again
+    array_of_object_arrays:
+      - - title: hello
+          description: hello
+        - title: there
+          description: there
+      - - title: hi
+          description: hi
+        - title: again
+          description: again
+    array_of_single_key_object_arrays:
+      - - title: hello
+        - title: there
+      - - title: hi
+        - title: again
+  ignore:
+    ignore: This is here to force tabs
+
+_inputs:
+  ignore:
+    type: disabled

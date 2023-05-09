@@ -55,6 +55,11 @@ configuration:
   url_array:
     - 'https://cloudcannon.com'
 convention:
+  array_array:
+    - - title: hello
+      - description: there
+    - - title: hi
+      - description: again
   object_array:
     - title: Hello
       description: This is a description

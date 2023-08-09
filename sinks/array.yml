@@ -65,9 +65,17 @@ convention:
       description: This is a description
       image: /images/example.png
       icon: cloud
+  basic_array:
+    - Hello
+  basic_truthy_checkbox_array:
+    - true
+  basic_falsy_checkbox_array:
+    - false
 invalid:
   no_value_empty_array:
-  non_object_value: Hello
+  array_value_empty_array: []
+  unconfigured_empty_array: []
+  non_object_value_array: Hello
 options:
   preview_array:
     - title: Default
@@ -204,8 +212,15 @@ _inputs:
     type: url
   invalid.no_value_empty_array:
     type: array
-  invalid.non_object_value:
+    comment: This has no value but is configured as an array. We have no items to clone and no subtype exists. The error should reflect this.
+  invalid.array_value_empty_array:
     type: array
+    comment: This has an empty array value and is configured as an array. We have no items to clone and no subtype exists. The error should reflect this.
+  invalid.unconfigured_empty_array:
+    comment: This has an empty array value and has no configured type. We have no items to clone and no subtype exists. The error should reflect this.
+  invalid.non_object_value_array:
+    type: array
+    comment: This has a string value and is configured as an array. Allowing an input here would change the data type so it should error.
   options.preview_array:
     type: array
     options:

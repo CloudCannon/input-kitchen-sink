@@ -89,19 +89,19 @@ _inputs:
   empty_subtype_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   empty_subtype_object.*:
     type: color
   checkbox_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   checkbox_object.*:
     type: checkbox
   choice_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   choice_object.*:
     type: choice
     options:
@@ -111,73 +111,73 @@ _inputs:
   code_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   code_object.*:
     type: code
   color_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   color_object.*:
     type: color
   date_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   date_object.*:
     type: date
   datetime_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   datetime_object.*:
     type: datetime
   disabled_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   disabled_object.*:
     type: disabled
   document_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   document_object.*:
     type: document
   email_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   email_object.*:
     type: email
   file_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   file_object.*:
     type: file
   html_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   html_object.*:
     type: html
   image_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   image_object.*:
     type: image
   markdown_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   markdown_object.*:
     type: markdown
   multichoice_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   multichoice_object.*:
     type: multichoice
     options:
@@ -187,7 +187,7 @@ _inputs:
   multiselect_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   multiselect_object.*:
     type: multiselect
     options:
@@ -195,13 +195,13 @@ _inputs:
   number_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   number_object.*:
     type: number
   range_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   range_object.*:
     type: range
     options:
@@ -211,7 +211,7 @@ _inputs:
   select_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   select_object.*:
     type: select
     options:
@@ -219,37 +219,37 @@ _inputs:
   social_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   social_object.*:
     type: github
   switch_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   switch_object.*:
     type: switch
   text_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   text_object.*:
     type: text
   textarea_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   textarea_object.*:
     type: textarea
   time_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   time_object.*:
     type: time
   url_object:
     type: object
     options:
-      allow_create: true
+      subtype: mutable
   url_object.*:
     type: url
   invalid.no_value_empty_object:
@@ -267,22 +267,25 @@ _inputs:
   empty_value_structured_object:
     type: object
     options:
-      allow_create: true
-      value_structures: _structures.gallery
+      subtype: mutable
+      entries:
+        structures: _structures.gallery
   empty_value_structured_with_allowed_keys_object:
     type: object
     options:
-      allow_create: true
-      value_structures: _structures.gallery
-      allowed_keys:
-        - first
-        - second
-        - third
+      subtype: mutable
+      entries:
+        structures: _structures.gallery
+        allowed_keys:
+          - first
+          - second
+          - third
   value_structured_object:
     type: object
     options:
-      allow_create: true
-      value_structures: _structures.gallery
+      subtype: mutable
+      entries:
+        structures: _structures.gallery
   options.preview_object:
     type: object
     options:

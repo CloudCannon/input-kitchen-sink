@@ -1,7 +1,11 @@
 configuration:
   null_input:
-  true_input:
-  false_input:
+  true_input: true
+  false_input: false
+peek_a_boo:
+  show_modern_dinosaur:
+  🦖: Rawr
+  🐓: Cluck
 invalid:
   not_a_boolean: Hi there
 
@@ -12,5 +16,13 @@ _inputs:
     type: switch
   false_input:
     type: switch
+  peek_a_boo.show_modern_dinosaur:
+    type: switch
+  peek_a_boo.🦖:
+    type: text
+    hidden: '!show_modern_dinosaur'
+  peek_a_boo.🐓:
+    type: text
+    hidden: show_modern_dinosaur
   invalid.not_a_boolean:
     type: switch

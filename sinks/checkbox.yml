@@ -3,7 +3,23 @@ configuration:
 convention:
   should_be_true: true
   should_be_false: false
+peek_a_boo:
+  show_modern_dinosaur:
+  🦖: Rawr
+  🐓: Cluck
+invalid:
+  not_a_boolean: Hi there
 
 _inputs:
   checkbox_input:
+    type: checkbox
+  peek_a_boo.show_modern_dinosaur:
+    type: checkbox
+  peek_a_boo.🦖:
+    type: text
+    hidden: '!show_modern_dinosaur'
+  peek_a_boo.🐓:
+    type: text
+    hidden: show_modern_dinosaur
+  invalid.not_a_boolean:
     type: checkbox

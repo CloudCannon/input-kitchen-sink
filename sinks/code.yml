@@ -1,5 +1,6 @@
 configuration:
   code_block_input: echo hello
+  code_block_input_context: echo hello
 convention:
   code_block: echo hello
   my_code_block: echo hello
@@ -50,6 +51,16 @@ options:
 _inputs:
   code_block_input:
     type: code
+  code_block_input_context:
+    type: code
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.gutterless_code_block:
     options:
       show_gutter: false

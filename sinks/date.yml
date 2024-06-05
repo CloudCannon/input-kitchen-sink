@@ -1,5 +1,6 @@
 configuration:
   date_input: 2020-07-15T12:00:00.000Z
+  date_input_context: 2020-07-15T12:00:00.000Z
 convention:
   my_date: 2020-07-15T12:00:00.000Z
 valid:
@@ -15,6 +16,16 @@ options:
 _inputs:
   date_input:
     type: date
+  date_input_context:
+    type: date
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.timezone_date:
     options:
       timezone: America/New_York

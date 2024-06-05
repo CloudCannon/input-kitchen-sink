@@ -1,5 +1,6 @@
 configuration:
   choice_input: Blue
+  choice_input_context: Blue
   color: Blue
   my_color: Blue
   ssg: 11ty
@@ -17,6 +18,21 @@ _inputs:
     type: choice
   my_ssg:
     type: choice
+  choice_input_context:
+    type: choice
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
+    options:
+      values:
+        - Pink
+        - Blue
+        - Orange
   choice_input:
     type: choice
     options:
@@ -25,10 +41,13 @@ _inputs:
         - Blue
         - Orange
   options.value_key_animal:
+    type: choice
     options:
       value_key: known_as
   options.preview_animal:
+    type: choice
     options:
+      value_key: known_as
       preview:
         icon:
           - key: icon_material
@@ -36,6 +55,8 @@ _inputs:
         text:
           - key: known_as
           - Unknown
+        subtext:
+          - key: blurb
 
 _select_data:
   colors:

@@ -1,5 +1,6 @@
 configuration:
   url_input: 'https://cloudcannon.com/'
+  url_input_context: 'https://cloudcannon.com/'
 convention:
   url: 'https://cloudcannon.com/'
   my_url: 'https://cloudcannon.com/'
@@ -19,6 +20,16 @@ options:
 _inputs:
   url_input:
     type: url
+  url_input_context:
+    type: url
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_url:
     options:
       empty_type: 'null'

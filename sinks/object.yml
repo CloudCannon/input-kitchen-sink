@@ -1,4 +1,7 @@
 configuration:
+  context_object:
+    text: Hello
+    description: there
   structured_object:
     image:
     caption:
@@ -86,6 +89,16 @@ options:
   object_object:
 
 _inputs:
+  context_object:
+    type: object
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   empty_subtype_object:
     type: object
     options:

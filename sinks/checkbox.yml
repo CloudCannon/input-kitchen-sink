@@ -1,5 +1,6 @@
 configuration:
   checkbox_input:
+  checkbox_input_context:
 convention:
   should_be_true: true
   should_be_false: false
@@ -13,6 +14,16 @@ invalid:
 _inputs:
   checkbox_input:
     type: checkbox
+  checkbox_input_context:
+    type: checkbox
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   peek_a_boo.show_modern_dinosaur:
     type: checkbox
   peek_a_boo.🦖:

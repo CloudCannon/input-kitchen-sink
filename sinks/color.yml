@@ -1,5 +1,6 @@
 configuration:
   color_input: '#abcdef'
+  color_input_context: '#abcdef'
   rgb_input: rgb(3, 74, 216)
   rgba_input: rgba(3, 74, 216, 0.5)
   hex_input: '#abcdef'
@@ -39,6 +40,16 @@ options:
 _inputs:
   color_input:
     type: color
+  color_input_context:
+    type: color
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   rgb_input:
     type: color
     options:

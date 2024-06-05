@@ -1,5 +1,6 @@
 configuration:
   facebook_input: CloudCannon
+  facebook_input_context: CloudCannon
 convention:
   facebook: CloudCannon
   my_facebook: CloudCannon
@@ -38,6 +39,16 @@ options:
 _inputs:
   facebook_input:
     type: facebook
+  facebook_input_context:
+    type: facebook
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_facebook:
     type: facebook
     options:

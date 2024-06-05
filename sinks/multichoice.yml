@@ -1,6 +1,8 @@
 configuration:
   multichoice_input:
     - Blue
+  multichoice_input_context:
+    - Blue
   colors:
     - Blue
   my_colors:
@@ -37,6 +39,21 @@ _inputs:
         - Pink
         - Blue
         - Orange
+  multichoice_input_context:
+    type: multichoice
+    options:
+      values:
+        - Pink
+        - Blue
+        - Orange
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   valid.null_colors:
     type: multichoice
   valid.array_colors:
@@ -46,10 +63,13 @@ _inputs:
   invalid.no_values:
     type: multichoice
   options.value_key_animal:
+    type: multichoice
     options:
       value_key: known_as
   options.preview_animal:
+    type: multichoice
     options:
+      value_key: known_as
       preview:
         icon:
           - key: icon_material
@@ -57,6 +77,8 @@ _inputs:
         text:
           - key: known_as
           - Unknown
+        subtext:
+          - key: blurb
 
 _select_data:
   colors:

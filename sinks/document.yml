@@ -1,5 +1,6 @@
 configuration:
   document_input: /documents/example.pdf
+  document_input_context: /documents/example.pdf
 convention:
   document: /documents/example.pdf
   my_document: /documents/example.pdf
@@ -14,6 +15,16 @@ options:
 _inputs:
   document_input:
     type: document
+  document_input_context:
+    type: document
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_document:
     options:
       empty_type: 'null'

@@ -1,4 +1,9 @@
 configuration:
+  context_array:
+    - text: Example
+      description: Another
+    - text: Ok
+      description: Then
   empty_structured_array:
   structured_array:
     - image:
@@ -90,6 +95,15 @@ options:
   array_array:
 
 _inputs:
+  context_array:
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   structured_array:
     type: array
     options:

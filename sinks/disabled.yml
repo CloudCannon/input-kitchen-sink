@@ -1,5 +1,6 @@
 configuration:
   disabled_input: Untouchable
+  disabled_input_context: Untouchable
 options:
   null_disabled:
   string_disabled:
@@ -7,6 +8,16 @@ options:
 _inputs:
   disabled_input:
     type: disabled
+  disabled_input_context:
+    type: disabled
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_disabled:
     type: disabled
     options:

@@ -1,5 +1,6 @@
 configuration:
   markdown_input: 'Good **stuff**.'
+  markdown_input_context: 'Good **stuff**.'
 convention:
   markdown: 'Good **stuff**.'
   my_markdown: 'Good **stuff**.'
@@ -13,6 +14,16 @@ options:
 _inputs:
   markdown_input:
     type: markdown
+  markdown_input_context:
+    type: markdown
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.short_non_resizable_markdown:
     options:
       allow_resize: false

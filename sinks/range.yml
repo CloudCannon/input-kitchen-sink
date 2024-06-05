@@ -1,5 +1,6 @@
 configuration:
   range_input: 5
+  range_input_context: 5
 invalid:
   no_options_range: 5
 options:
@@ -15,6 +16,20 @@ _inputs:
       min: 1
       max: 10
       step: 1
+  range_input_context:
+    type: range
+    options:
+      min: 1
+      max: 10
+      step: 1
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   invalid.no_options_range:
     type: range
   options.between_1_and_10_whole_range:

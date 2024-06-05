@@ -1,5 +1,6 @@
 configuration:
   file_input: /css/styles.css
+  file_input_context: /css/styles.css
 convention:
   path: /css/styles.css
   my_path: /css/styles.css
@@ -13,8 +14,18 @@ options:
   string_path:
 
 _inputs:
-  path_input:
+  file_input:
     type: file
+  file_input_context:
+    type: file
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_path:
     options:
       empty_type: 'null'

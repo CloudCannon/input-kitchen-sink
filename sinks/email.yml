@@ -1,5 +1,6 @@
 configuration:
   email_input: contact@example.com
+  email_input_context: contact@example.com
 convention:
   email: contact@example.com
   my_email: contact@example.com
@@ -16,6 +17,16 @@ options:
 _inputs:
   email_input:
     type: email
+  email_input_context:
+    type: email
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_email:
     options:
       empty_type: 'null'

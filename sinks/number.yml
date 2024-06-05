@@ -1,5 +1,6 @@
 configuration:
   number_input: 123
+  number_input_context: 123
 convention:
   number: 123
   my_number: 123
@@ -29,6 +30,16 @@ options:
 _inputs:
   number_input:
     type: number
+  number_input_context:
+    type: number
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.between_1_and_10_number:
     options:
       min: 1

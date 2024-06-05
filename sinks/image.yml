@@ -1,5 +1,6 @@
 configuration:
   image_input: /images/example.png
+  image_input_context: /images/example.png
 convention:
   image: /images/example.png
   my_image: /images/example.png
@@ -15,6 +16,16 @@ options:
 _inputs:
   image_input:
     type: image
+  image_input_context:
+    type: image
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_image:
     options:
       empty_type: 'null'

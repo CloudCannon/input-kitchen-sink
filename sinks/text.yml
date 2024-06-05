@@ -1,5 +1,6 @@
 configuration:
   text_input: Hello
+  text_input_context: Hello
 convention:
   text: Hello
 valid:
@@ -13,6 +14,16 @@ options:
 _inputs:
   text_input:
     type: text
+  text_input_context:
+    type: text
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   convention.text:
     comment: The convention here is this doesn't match any other input convention.
   options.null_text:

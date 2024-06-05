@@ -1,5 +1,6 @@
 configuration:
   textarea_input: Hi there
+  textarea_input_context: Hi there
 convention:
   textarea: Hi there
   my_textarea: Hi there
@@ -37,6 +38,16 @@ options:
 _inputs:
   textarea_input:
     type: textarea
+  textarea_input_context:
+    type: textarea
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.null_textarea:
     options:
       empty_type: 'null'

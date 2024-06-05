@@ -1,6 +1,8 @@
 configuration:
   multiselect_input:
     - Blue
+  multiselect_input_context:
+    - Blue
 convention:
   colors:
     - Blue
@@ -30,6 +32,21 @@ _inputs:
         - Pink
         - Blue
         - Orange
+  multiselect_input_context:
+    type: multiselect
+    options:
+      values:
+        - Pink
+        - Blue
+        - Orange
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   invalid.no_values:
     type: multiselect
   options.value_key_animal:
@@ -37,6 +54,7 @@ _inputs:
       value_key: known_as
   options.preview_animal:
     options:
+      value_key: known_as
       preview:
         icon:
           - key: icon_material
@@ -44,6 +62,8 @@ _inputs:
         text:
           - key: known_as
           - Unknown
+        subtext:
+          - key: blurb
 
 _select_data:
   colors:

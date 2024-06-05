@@ -1,5 +1,6 @@
 configuration:
   html_input: 'Good <strong>stuff</strong>.'
+  html_input_context: 'Good <strong>stuff</strong>.'
 convention:
   html: 'Good <strong>stuff</strong>.'
   my_html: 'Good <strong>stuff</strong>.'
@@ -13,6 +14,16 @@ options:
 _inputs:
   html_input:
     type: html
+  html_input_context:
+    type: html
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   options.short_non_resizable_html:
     options:
       allow_resize: false

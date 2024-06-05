@@ -1,5 +1,6 @@
 configuration:
   select_input: Blue
+  select_input_context: Blue
   value_key_animal: Bunny
   preview_animal: Rabbit
 convention:
@@ -18,6 +19,21 @@ _inputs:
         - Pink
         - Blue
         - Orange
+  select_input_context:
+    type: select
+    options:
+      values:
+        - Pink
+        - Blue
+        - Orange
+    context:
+      open: true
+      title: Instructions
+      icon: help
+      content: |
+        # Example Instructions
+
+        Great **content** here.
   value_key_animal:
     type: select
     options:

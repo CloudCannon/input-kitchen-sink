@@ -40,6 +40,8 @@ _inputs:
     type: textarea
   textarea_input_context:
     type: textarea
+    options:
+      show_count: true
     context:
       open: true
       title: Instructions

@@ -6,6 +6,10 @@ options:
   string_disabled:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   disabled_input:
     type: disabled
   disabled_input_context:

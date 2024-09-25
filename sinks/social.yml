@@ -37,6 +37,10 @@ options:
   string_facebook:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   facebook_input:
     type: facebook
   facebook_input_context:

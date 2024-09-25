@@ -12,6 +12,10 @@ options:
   string_text:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   text_input:
     type: text
   text_input_context:

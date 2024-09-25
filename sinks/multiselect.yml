@@ -26,6 +26,10 @@ options:
     - Rabbit
     - Bug
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   multiselect_input:
     type: multiselect
     options:

@@ -95,6 +95,10 @@ options:
   array_array:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   context_array:
     context:
       open: true

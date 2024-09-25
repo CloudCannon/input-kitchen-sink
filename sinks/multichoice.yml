@@ -24,6 +24,10 @@ options:
     - Dog
     - Bug
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   colors:
     type: multichoice
   my_colors:

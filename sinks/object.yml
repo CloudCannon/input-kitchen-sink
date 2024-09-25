@@ -89,6 +89,10 @@ options:
   object_object:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   context_object:
     type: object
     context:

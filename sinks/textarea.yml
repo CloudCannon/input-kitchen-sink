@@ -36,6 +36,10 @@ options:
   string_textarea:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   textarea_input:
     type: textarea
   textarea_input_context:

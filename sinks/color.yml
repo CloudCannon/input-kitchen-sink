@@ -4,11 +4,11 @@ configuration:
   rgb_input: rgb(3, 74, 216)
   rgba_input: rgba(3, 74, 216, 0.5)
   hex_input: '#abcdef'
-  hexa_input: '#abcdefff'
-  hsv_input: hsv(220, 98.6, 84.7)
-  hsva_input: hsva(220, 98.6, 84.7, 0.5)
-  hsl_input: hsl(220, 97.3, 42.9)
-  hsla_input: hsla(220, 97.3, 42.9, 0.5)
+  hexa_input: rgba(205, 239, 255, 0.671)
+  hsv_input: hsv(220, 99%, 85%)
+  hsva_input: hsva(220, 99%, 85%, 0.5)
+  hsl_input: hsl(220, 97%, 43%)
+  hsla_input: hsla(220, 97%, 43%, 0.5)
 convention:
   color: '#abcdef'
   my_color: '#abcdef'
@@ -36,8 +36,11 @@ valid:
 options:
   null_color:
   string_color:
-
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   color_input:
     type: color
   color_input_context:

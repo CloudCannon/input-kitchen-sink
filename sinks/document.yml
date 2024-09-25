@@ -13,6 +13,10 @@ options:
   string_document:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   document_input:
     type: document
   document_input_context:

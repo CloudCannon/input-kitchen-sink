@@ -14,6 +14,10 @@ options:
   string_image:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   image_input:
     type: image
   image_input_context:

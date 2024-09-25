@@ -55,6 +55,10 @@ tabs:
     ignore: This is here to force tabbed object
 
 _inputs:
+  tabs:
+    type: object
+    options:
+      subtype: tabbed
   ignore:
     type: disabled
   object_of_text_arrays:

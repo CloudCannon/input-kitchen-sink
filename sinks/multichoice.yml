@@ -21,8 +21,8 @@ options:
   value_key_animals:
     - Rabbit
   preview_animals:
-    - Rabbit
-
+    - Dog
+    - Bug
 _inputs:
   colors:
     type: multichoice
@@ -62,11 +62,11 @@ _inputs:
     type: multichoice
   invalid.no_values:
     type: multichoice
-  options.value_key_animal:
+  options.value_key_animals:
     type: multichoice
     options:
       value_key: known_as
-  options.preview_animal:
+  options.preview_animals:
     type: multichoice
     options:
       value_key: known_as
@@ -79,7 +79,6 @@ _inputs:
           - Unknown
         subtext:
           - key: blurb
-
 _select_data:
   colors:
     - Red

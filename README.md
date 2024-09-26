@@ -1,4 +1,4 @@
-# Input Kitchen Sink
+# Input Kitchen Sink Unified
 
 Various examples of CloudCannon inputs, with various configuration settings, conventions, and
 options applied.

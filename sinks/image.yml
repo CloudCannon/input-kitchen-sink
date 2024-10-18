@@ -6,8 +6,8 @@ convention:
   my_image: /images/example.png
   my_image_path: /images/example.png
 examples:
-  external_image: 'https://placekitten.com/100/100?a=.png'
-  no_extension_external_image: 'https://placekitten.com/100/100'
+  external_image: 'https://placebear.com/100/100?a=.png'
+  no_extension_external_image: 'https://placebear.com/100/100'
   local_image: /images/example.png
 options:
   null_image:

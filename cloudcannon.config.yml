@@ -8,3 +8,30 @@ collections_config:
       text: Inputs documentation
     path: sinks
     icon: countertops
+  duplicate_tests:
+    name: Duplicate Tests
+    singular_name: Plicate
+    description: A test bed for duplicating and instance values
+    path: duplicate-tests
+    icon: nature_people
+    _inputs:
+      $.uuid:
+        instance_value: UUID
+      $.date:
+        instance_value: NOW
+      instance_values_blocks:
+        type: array
+        options:
+          structures: _structures.instance_values_blocks
+    
+_structures:
+  instance_values_blocks:
+    values:
+      - label: UUID
+        value:
+          inner_uuid:
+        _inputs:
+          inner_uuid:
+            instance_value: UUID
+        
+

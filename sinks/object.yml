@@ -22,9 +22,9 @@ configuration:
   color_object:
     one: '#abcdef'
   date_object:
-    one: 2020-07-15T12:00:00.000Z
+    one: 2020-07-15T12:00:00Z
   datetime_object:
-    one: 2020-07-15T12:00:00.000Z
+    one: 2020-07-15T12:00:00Z
   disabled_object:
     one: Cannot edit this
   document_object:
@@ -34,11 +34,11 @@ configuration:
   file_object:
     one: /css/styles.css
   html_object:
-    one: 'Good <strong>stuff</strong>.'
+    one: Good <strong>stuff</strong>.
   image_object:
     one: /images/example.png
   markdown_object:
-    one: 'Good **stuff**.'
+    one: Good **stuff**.
   multichoice_object:
     one:
       - jekyll
@@ -62,9 +62,9 @@ configuration:
   textarea_object:
     one: Hello
   time_object:
-    one: '1:23 pm'
+    one: 1:23 pm
   url_object:
-    one: 'https://cloudcannon.com'
+    one: https://cloudcannon.com
 convention:
   object:
     title: Hello
@@ -79,7 +79,7 @@ options:
   preview_object:
     title: Default
     description: Default
-    image: /images/default.png
+    image: /siteicon.png
     icon: bug_report
     header: Hello
     blurb: This is a description
@@ -87,7 +87,6 @@ options:
     logo: cloud
   null_object:
   object_object:
-
 _inputs:
   context_object:
     type: object
@@ -308,9 +307,9 @@ _inputs:
         subtext:
           - key: blurb
         icon:
-          - key: picture
-        image:
           - key: logo
+        image:
+          - key: picture
   options.null_object:
     type: object
     options:
@@ -321,7 +320,6 @@ _inputs:
     options:
       structures: _structures.gallery
       empty_type: object
-
 _structures:
   gallery:
     values:
@@ -340,7 +338,6 @@ _structures:
         value:
           url:
           title:
-
 _select_data:
   ssgs:
     jekyll: Jekyll

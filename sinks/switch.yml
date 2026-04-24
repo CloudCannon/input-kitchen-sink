@@ -11,6 +11,10 @@ invalid:
   not_a_boolean: Hi there
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   context_input:
     type: switch
     context:

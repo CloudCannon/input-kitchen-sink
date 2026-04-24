@@ -12,6 +12,10 @@ invalid:
   no_value_key_or_preview_odd_animal: Dog
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   select_input:
     type: select
     options:

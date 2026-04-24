@@ -18,6 +18,10 @@ options:
   string_datetime:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   datetime_input:
     type: datetime
   datetime_input_context:

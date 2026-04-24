@@ -10,6 +10,10 @@ options:
   preview_animal: Rabbit
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   color:
     type: choice
   my_color:

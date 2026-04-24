@@ -12,6 +12,10 @@ invalid:
   not_a_boolean: Hi there
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   checkbox_input:
     type: checkbox
   checkbox_input_context:

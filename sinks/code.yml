@@ -49,6 +49,10 @@ options:
   string_code_block:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   code_block_input:
     type: code
   code_block_input_context:

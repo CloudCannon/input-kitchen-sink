@@ -14,6 +14,10 @@ options:
   string_date:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   date_input:
     type: date
   date_input_context:

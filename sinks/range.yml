@@ -10,6 +10,10 @@ options:
   range_range:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   range_input:
     type: range
     options:

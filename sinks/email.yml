@@ -15,6 +15,10 @@ options:
   string_email:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   email_input:
     type: email
   email_input_context:

@@ -18,6 +18,10 @@ options:
   string_url:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   url_input:
     type: url
   url_input_context:

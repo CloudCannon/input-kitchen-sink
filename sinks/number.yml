@@ -28,6 +28,10 @@ options:
   number_number:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   number_input:
     type: number
   number_input_context:

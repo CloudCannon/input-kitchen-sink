@@ -42,5 +42,9 @@ tabs:
     ignore: This is here to force tabs
 
 _inputs:
+  tabs:
+    type: object
+    options:
+      subtype: tabbed
   ignore:
     type: disabled

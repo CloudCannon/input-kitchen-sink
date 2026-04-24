@@ -12,6 +12,10 @@ options:
   string_markdown:
 
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   markdown_input:
     type: markdown
   markdown_input_context:

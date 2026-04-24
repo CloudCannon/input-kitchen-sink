@@ -21,10 +21,15 @@ invalid:
 options:
   value_key_animals:
     - Rabbit
+    - Dog
   preview_animals:
     - Rabbit
-
+    - Bug
 _inputs:
+  $:
+    type: object
+    options:
+      subtype: tabbed
   multiselect_input:
     type: multiselect
     options:
@@ -49,10 +54,10 @@ _inputs:
         Great **content** here.
   invalid.no_values:
     type: multiselect
-  options.value_key_animal:
+  options.value_key_animals:
     options:
       value_key: known_as
-  options.preview_animal:
+  options.preview_animals:
     options:
       value_key: known_as
       preview:
@@ -64,7 +69,6 @@ _inputs:
           - Unknown
         subtext:
           - key: blurb
-
 _select_data:
   colors:
     - Red
